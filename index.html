@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Expense Tracker</h1>
+
+      <form id="expense-form">
+        <input
+          type="text"
+          id="title"
+          placeholder="Expense Title"
+          autofocus
+          required
+        />
+        <input type="number" id="amount" placeholder="Amount" required />
+        <button type="submit">Add Expense</button>
+      </form>
+
+      <div>
+        <h3 id="parentCount">
+          Total Products: <span id="total-expenses">0</span>
+        </h3>
+        <h3 id="total-price">
+          Total Price : <span id="total-price">0.Rs</span>
+        </h3>
+      </div>
+
+      <div class="product-container">
+        <ul id="expense-list">
+          <!-- Expenses will be added here -->
+          <!-- <li>
+            <span>bag:<span class="amount">1000.Rs</span></span>
+            <button onclick="deleteExpense">Delete</button>
+         </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
